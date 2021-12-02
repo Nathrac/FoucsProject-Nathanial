@@ -897,6 +897,60 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "PrimaryButton",
+            "id": "f4288a86-2fd3-49e2-984d-19f58ec934e6",
+            "actions": [
+                {
+                    "name": "CarStart",
+                    "type": "Button",
+                    "id": "93e47f64-7a2e-460c-9f5f-beeda122e96c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "07a855d4-7e51-4647-94bb-c468c9f7410d",
+                    "path": "<XRController>/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarStart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "SecondaryButton",
+            "id": "81ccbd15-4036-4299-80f7-906ddc70133c",
+            "actions": [
+                {
+                    "name": "CarStop",
+                    "type": "Button",
+                    "id": "0821f0bb-12bc-4c2f-83ce-501249565b97",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7a0aa30d-aa59-467f-852f-88fe3f061a73",
+                    "path": "<XRController>/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CarStop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
