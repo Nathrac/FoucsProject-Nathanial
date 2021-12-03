@@ -5,18 +5,20 @@ using TMPro;
 
 public class WeAreInTheEndgameNow : MonoBehaviour
 {
-    [SerializeField] List<TextMeshProUGUI> taskList = new List<TextMeshProUGUI>();
+    public List<TextMeshProUGUI> taskList = new List<TextMeshProUGUI>();
     int finalcountdown = 60;
     int timeLeft;
-    [SerializeField] TextMeshProUGUI tabletClock;
     [SerializeField] TextMeshProUGUI endText;
+    [SerializeField] GameObject end;
+    [SerializeField] GameObject buttons;
 
     // Update is called once per frame
     void Update()
     {
        if (taskList.Count == 0)
         {
-            endText.text = "You have finished all of the tasks, and now the application will end in" + timeLeft.ToString() + "seconds until the experience will close.";
+            end.SetActive(true);
+            endText.text = "You have finished all of the tasks\nand now the application will end in\n" + timeLeft.ToString() +"seconds";
             StartCoroutine(Timer());
         }
     }
@@ -30,6 +32,7 @@ public class WeAreInTheEndgameNow : MonoBehaviour
             counter--;
             timeLeft = counter;
         }
+        Debug.Log("tada");
         Application.Quit();
     }
 }
