@@ -7,32 +7,48 @@ public class WeAreInTheEndgameNow : MonoBehaviour
 {
     public List<TextMeshProUGUI> taskList = new List<TextMeshProUGUI>();
     int finalcountdown = 60;
-    int timeLeft;
     [SerializeField] TextMeshProUGUI endText;
+    [SerializeField] TextMeshProUGUI deathTimer;
     [SerializeField] GameObject end;
     [SerializeField] GameObject buttons;
+    bool taskComplete = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-       if (taskList.Count == 0)
-        {
-            end.SetActive(true);
-            endText.text = "You have finished all of the tasks\nand now the application will end in\n" + timeLeft.ToString() +"seconds";
-            StartCoroutine(Timer());
-        }
-    }
 
-    IEnumerator Timer() //coroutine for countdown which is displayed on the tablet tmp
+    IEnumerator DeathTimer() //coroutine for countdown which is displayed on the tablet tmp. Once it reaches 0, application will close down
     {
-        int counter = finalcountdown;
-        while (counter > 0)
+        int timeleft = finalcountdown;
+        while (timeleft > 0)
         {
             yield return new WaitForSeconds(1);
-            counter--;
-            timeLeft = counter;
+            timeleft--;
+            deathTimer.text = timeleft.ToString();
         }
-        Debug.Log("tada");
+
         Application.Quit();
+    }
+
+    public void ListCheck() //check if all list items are null, if not then tasks are not complete, if so, start death timer
+    {
+        for (int i = 0; i < taskList.Count; i++)
+        {
+            if (taskList[i] != null)
+            {
+                taskComplete = false;
+                break;
+            }
+            else
+            {
+                taskComplete = true;
+            }
+
+        }
+
+        if (taskComplete)
+        {
+          end.SetActive(true);
+          buttons.SetActive(false);
+          endText.text = "You have finished all of the tasks\nand now the application will end in";
+          StartCoroutine(DeathTimer());
+        }
     }
 }

@@ -5,8 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SocketWithTagCheck : XRSocketInteractor
 {
-    [SerializeField] string targetTag = string.Empty;
-
+    //socket interactor that uses specific tags to snap objects together so that when building the engine only specific components connect to one another
+    [SerializeField] string targetTag = string.Empty; 
+   
     public override bool CanHover(XRBaseInteractable interactable)
     {
         return base.CanHover(interactable) && MatchUsingTag(interactable);
