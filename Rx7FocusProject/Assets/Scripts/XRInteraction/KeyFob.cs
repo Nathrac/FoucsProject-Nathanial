@@ -12,12 +12,12 @@ public class KeyFob : MonoBehaviour
     [SerializeField] AudioSource startEngine; //custom start engine audio
     [SerializeField] AudioSource engineIdle; //engine idle audio that will loop and mix with engine start
     [SerializeField] AudioSource engineOff; //custom audio for when car is turned off
+    [SerializeField] AudioSource fobClick;
     [SerializeField] InputActionReference carStart;
     [SerializeField] InputActionReference carEnd;
     XRBaseInteractor interactor;
     [SerializeField] int idleStart; // wait time until idle starts playing on loop
     bool coruOn = false; // if engine coroutine is on
-    [SerializeField] float audioFade;
 
 
     private void Awake()
@@ -32,7 +32,6 @@ public class KeyFob : MonoBehaviour
     {
         interactor = grabInteractable.selectingInteractor;
     }
-
     public void ReleaseInteractor()
     {
         interactor = null;
@@ -44,26 +43,30 @@ public class KeyFob : MonoBehaviour
         {
             if (coruOn == false) //if coroutine is false start engine start coroutine
             {
+                fobClick.Play();
                 StartCoroutine(EngineRunning()); 
-                coruOn = true; //set coroutine to true so it can't be turned on unless turned off first
             }
         }
         else if (obj.control.ToString().Contains("Right") && interactor.name.Contains("Right")) //if in right hand activate with right button
         {
             if (coruOn == false)
             {
+                fobClick.Play();
                 StartCoroutine(EngineRunning());
-                coruOn = true;
             }
         }
     }
+
+
     private void CarOff(InputAction.CallbackContext obj) //secondary button will turn off car
     {
         if (obj.control.ToString().Contains("Left") && interactor.name.Contains("Left"))
         {
             if (coruOn == true) //if engine on coroutine is playing, then you can turn the car off
             {
-                StartCoroutine(AudioFadeCR()); //fade out engine sounds before turning engine off audio
+                fobClick.Play();
+                startEngine.Stop();  //turn off running engine sounds before turning "engine off" audio on
+                engineIdle.Stop();
                 engineOff.Play();
                 coruOn = false; //set engine on coroutine to false to be able to start engine again
             }
@@ -72,7 +75,9 @@ public class KeyFob : MonoBehaviour
         {
             if (coruOn == true)
             {
-                StartCoroutine(AudioFadeCR());
+                fobClick.Play();
+                startEngine.Stop();
+                engineIdle.Stop();
                 engineOff.Play();
                 coruOn = false;
             }
@@ -84,17 +89,7 @@ public class KeyFob : MonoBehaviour
         startEngine.Play();
         yield return new WaitForSeconds(idleStart);
         engineIdle.Play();
+        coruOn = true; //set coroutine to true so it can't be turned on unless turned off first
     }
    
-    private IEnumerator AudioFadeCR() //audio fade script to fade audio without using snapshots
-    {
-        float t = audioFade;
-        while (t > 0)
-        {
-            yield return null;
-            t -= Time.deltaTime;
-            engineIdle.volume = t / audioFade;
-        }
-        yield break;
-    }
 }
