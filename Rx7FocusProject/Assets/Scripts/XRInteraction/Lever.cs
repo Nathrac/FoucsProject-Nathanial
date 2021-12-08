@@ -12,6 +12,7 @@ public class Lever : MonoBehaviour
     WeAreInTheEndgameNow endGame;
     [SerializeField] int tasknum;
     bool leverpulled = false;
+    [SerializeField] AudioSource uiSelect;
     
 
     void Awake() //get the hinge component of the lever
@@ -27,8 +28,9 @@ public class Lever : MonoBehaviour
 
     private void Update() //check everyframe if lever has reached limit
     {
-        if (leverHinge.angle == leverHinge.limits.min && ActivateTablet.tabletIsActive && !leverpulled) //if lever reaches angle, tablet is set to active, and lever is not pulled then do the following.
+        if (leverHinge.angle == leverHinge.limits.max && !leverpulled) //if lever reaches angle, tablet is set to active, and lever is not pulled then do the following.
         {
+            uiSelect.Play();
             endGame.taskList[tasknum] = null; //set list item to null
             endGame.ListCheck(); //check if all items are null in game manager script
             TaskRemove.Invoke(); //destroy task from game
