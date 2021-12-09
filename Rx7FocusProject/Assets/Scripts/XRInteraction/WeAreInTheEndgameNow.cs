@@ -11,6 +11,7 @@ public class WeAreInTheEndgameNow : MonoBehaviour
     [SerializeField] TextMeshProUGUI deathTimer;
     [SerializeField] GameObject end;
     [SerializeField] GameObject buttons;
+    [SerializeField] GameObject instuctions;
     bool taskComplete = false;
 
 
@@ -45,10 +46,11 @@ public class WeAreInTheEndgameNow : MonoBehaviour
 
         if (taskComplete)
         {
-          end.SetActive(true);
-          buttons.SetActive(false);
-          endText.text = "You have finished all of the tasks\nand now the application will end in";
-          StartCoroutine(DeathTimer());
+            instuctions.SetActive(false);
+            end.SetActive(true);
+            buttons.SetActive(false);
+            endText.text = "You have finished all of the tasks\nand now the application will end in";
+            StartCoroutine(DeathTimer());
         }
     }
 }

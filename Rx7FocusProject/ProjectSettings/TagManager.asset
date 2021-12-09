@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Rotor
+  - Shaft
+  - CenterHousing
+  - RotorHousing
   layers:
   - Default
   - TransparentFX
