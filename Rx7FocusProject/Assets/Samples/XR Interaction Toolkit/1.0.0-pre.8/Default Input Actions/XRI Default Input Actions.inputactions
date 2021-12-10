@@ -225,17 +225,6 @@
                 },
                 {
                     "name": "",
-                    "id": "b8edee81-6779-4aa8-89cd-29b149a8f55e",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Teleport Mode Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "b8aebee7-fa03-43d4-bfb7-77a3f87452cc",
                     "path": "<XRController>{LeftHand}/gripPressed",
                     "interactions": "",
@@ -648,17 +637,6 @@
                     "id": "62690862-4688-4010-975b-b3d9c6062157",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=1)",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Teleport Mode Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "90efd65e-3290-4798-af15-21ab4d7848b5",
-                    "path": "<XRController>{RightHand}/primaryButton",
-                    "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Teleport Mode Activate",
