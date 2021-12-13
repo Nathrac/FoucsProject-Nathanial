@@ -28,7 +28,7 @@ public class Lever : MonoBehaviour
 
     private void Update() //check everyframe if lever has reached limit
     {
-        if (leverHinge.angle == leverHinge.limits.max && !leverpulled) //if lever reaches angle, tablet is set to active, and lever is not pulled then do the following.
+        if (leverHinge.angle == leverHinge.limits.min   && !leverpulled) //if lever reaches angle, tablet is set to active, and lever is not pulled then do the following.
         {
             uiSelect.Play();
             endGame.taskList[tasknum] = null; //set list item to null
