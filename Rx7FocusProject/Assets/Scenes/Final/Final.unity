@@ -273,14 +273,14 @@ RectTransform:
   m_GameObject: {fileID: 2955768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.642936, y: 0.642936, z: 0.642936}
+  m_LocalScale: {x: 0.9012034, y: 0.9012034, z: 0.9012034}
   m_Children: []
   m_Father: {fileID: 1309107194}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00009999983, y: -0.0011}
+  m_AnchoredPosition: {x: 0.0006, y: 0.0051}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2955770
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: Task 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -330,14 +330,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.005
-  m_fontSizeBase: 0.005
+  m_fontSize: 0.003
+  m_fontSizeBase: 0.003
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 16
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2570,7 +2570,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2936,12 +2936,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This tablet is what will let you know when you have completed a task.\n\nTo
-    view your tasks, select the buttons at the bottom of the screen. \n\nAfter you
-    pull the lever to complete a task, it will clear the task. \n\nFeel free to complete
-    the tasks in whatever order you wish.\n\nOnce all the tasks are complete, the
-    experience will end. \n\nTo refer back to the instructions press the button at
-    the top of the screen."
+  m_text: "\nTo view your tasks, select the buttons at the bottom of the screen.
+    \n\nAfter you pull the lever to complete a task, it will delete the task. \n\nFeel
+    free to complete the tasks in whatever order you wish.\n\nOnce all the tasks
+    are complete, the experience will end. \n\nTo refer back to the instructions
+    press the button at the top of the screen."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -4035,7 +4034,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296862953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00000015116}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0077052983, y: 0.0077052983, z: 0.0077052983}
   m_Children: []
   m_Father: {fileID: 224437036}
@@ -4043,7 +4042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000025034, y: -0.000000095518}
+  m_AnchoredPosition: {x: -0, y: -0.01}
   m_SizeDelta: {x: 256, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296862955
@@ -4120,7 +4119,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 8.89
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -4527,7 +4526,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352217816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00000076132}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.007868584, y: 0.007868584, z: 0.007868584}
   m_Children: []
   m_Father: {fileID: 222711523}
@@ -4535,7 +4534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000095367, y: 0.00000064698}
+  m_AnchoredPosition: {x: -0, y: -0.011}
   m_SizeDelta: {x: 256, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352217818
@@ -4608,7 +4607,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5423,7 +5422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 407029660}
   m_Layer: 0
-  m_Name: BUILD INFO STAND
+  m_Name: SMALL STAND
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5604,8 +5603,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 0}
-    key1: {r: 1, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 0.11484802, g: 1, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6604,7 +6603,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -8414,7 +8413,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -9234,14 +9233,14 @@ RectTransform:
   m_GameObject: {fileID: 745377147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.642936, y: 0.642936, z: 0.642936}
+  m_LocalScale: {x: 1.0158389, y: 1.0158389, z: 1.0158389}
   m_Children: []
   m_Father: {fileID: 484702878}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00009999983, y: -0.0011}
+  m_AnchoredPosition: {x: 0.0009, y: 0.0051}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745377149
@@ -9264,7 +9263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '2
+  m_text: 'Task 2
 
 '
   m_isRightToLeft: 0
@@ -9293,8 +9292,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.005
-  m_fontSizeBase: 0.005
+  m_fontSize: 0.0028
+  m_fontSizeBase: 0.0028
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9434,6 +9433,10 @@ PrefabInstance:
       propertyPath: uiSelect
       value: 
       objectReference: {fileID: 724853198}
+    - target: {fileID: 5069848585152578813, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
+      propertyPath: taskNumber
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
 --- !u!4 &745993590 stripped
@@ -10584,6 +10587,7 @@ MonoBehaviour:
   end: {fileID: 2136590946}
   buttons: {fileID: 1290942590}
   instuctions: {fileID: 271581930}
+  tasks: {fileID: 1673039197}
 --- !u!4 &814644924
 Transform:
   m_ObjectHideFlags: 0
@@ -11527,7 +11531,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950635765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0000017326}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.0000837109, y: 0.0000837109, z: 0.0000837109}
   m_Children: []
   m_Father: {fileID: 369770067}
@@ -11535,7 +11539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000017881, y: -0.0000028535}
+  m_AnchoredPosition: {x: 0, y: 0.015}
   m_SizeDelta: {x: 25600, y: 4000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950635767
@@ -11600,7 +11604,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -13171,11 +13175,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Read Up
+  m_text: 'Task 1
 
 
-    Read up on the Wankel rotary engine by looking at the information
-    panels set at the side of the room. '
+    Read Up
+
+
+    Read up on the Wankel rotary engine by looking
+    at the information panels set at the side of the room. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -13358,7 +13365,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -14125,12 +14132,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Start The Car
+  m_text: 'Task 3
 
 
-    Grab the key fob set on the stand. Press the bottom
-    button on your controller (X & A) to start the car and stop the car with (Y &
-    B). '
+    Start The Car
+
+
+    Grab the key fob set on the stand. Press
+    the bottom button on your controller (X & A) to start the car and stop the car
+    with (Y & B). '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -14314,8 +14324,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 0}
-    key1: {r: 1, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 0.11484802, g: 1, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -14951,7 +14961,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -15213,7 +15223,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263340338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000018754}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.007914778, y: 0.007914778, z: 0.007914778}
   m_Children: []
   m_Father: {fileID: 222711523}
@@ -15221,7 +15231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000023841, y: 0.0000010711}
+  m_AnchoredPosition: {x: 0, y: -0.006}
   m_SizeDelta: {x: 256, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263340340
@@ -15293,7 +15303,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -15940,6 +15950,14 @@ PrefabInstance:
       propertyPath: uiSelect
       value: 
       objectReference: {fileID: 724853198}
+    - target: {fileID: 5069848585152578813, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
+      propertyPath: taskNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069848585152578813, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
+      propertyPath: taskListNumber
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
 --- !u!4 &1360634457 stripped
@@ -16318,14 +16336,14 @@ RectTransform:
   m_GameObject: {fileID: 1412904650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.642936, y: 0.642936, z: 0.642936}
+  m_LocalScale: {x: 0.9863281, y: 0.9863281, z: 0.9863281}
   m_Children: []
   m_Father: {fileID: 1159096965}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00009999983, y: -0.0011}
+  m_AnchoredPosition: {x: 0.0016, y: 0.0054}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1412904652
@@ -16348,7 +16366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: Task 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -16375,8 +16393,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.005
-  m_fontSizeBase: 0.005
+  m_fontSize: 0.0028
+  m_fontSizeBase: 0.0028
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17356,7 +17374,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -17695,11 +17713,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Build an Engine
+  m_text: 'Task 2
 
 
-    Using the completed build on the right table, build
-    an engine using the seperated components on the left table. '
+    Build an Engine
+
+
+    Using the completed build on the right
+    table, build an engine using the seperated components on the left table. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -17972,10 +17993,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "On the left there are engine componets.\n\nThe rotor housing is already
-    set as your starting point. \n\nYour final goal is to put together the engine
-    parts so that the finished product is identical to the one on the right table.
-    \n\nOnce you are done, pull the lever to clear the task from your list. "
+  m_text: "Put the parts on the left together to build the engine. \n\nThe parts
+    only go together in a certain order:\nRH, R, ES, CH, RH, R\n\nThe first part
+    (RH) is your base and already placed for you. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
   m_sharedMaterial: {fileID: 5267817085959903553, guid: bde82b832004f6b4cb9ffcaa2cde7a5f, type: 2}
@@ -18014,7 +18034,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -18787,7 +18807,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -21681,7 +21701,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -21806,6 +21826,14 @@ PrefabInstance:
       propertyPath: uiSelect
       value: 
       objectReference: {fileID: 724853198}
+    - target: {fileID: 5069848585152578813, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
+      propertyPath: taskNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069848585152578813, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
+      propertyPath: taskListNumber
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2293da791667f5c4c80d702043c3e408, type: 3}
 --- !u!4 &8022666627300973709 stripped

@@ -8,7 +8,7 @@ public class ItemDrop : MonoBehaviour
     [SerializeField] AudioSource dropSFX;
 
 
-    private void OnCollisionEnter(Collision collision) //if object falls and collides with ground, play drop sound effect.
+    private void OnCollisionEnter(Collision collision) //if object falls and collides with ground that has the ground tag, play drop sound effect.
     {
         if (collision.gameObject.tag == objectTag)
         {
