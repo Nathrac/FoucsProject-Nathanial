@@ -1,1 +1,1 @@
-# UI-Interaction-And-Material-Gallery
+Semester 1 focus project
